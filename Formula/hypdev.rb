@@ -6,6 +6,8 @@ class Hypdev < Formula
   sha256 "61627f6a7e77cc1686f0bcc7198f0cbe1d5bb8e489b69a9349762cd16521fa8e"
   license "ISC"
 
+  deprecate! date: "2026-07-28", because: "renamed to hypr"
+
   depends_on arch: :arm64
   depends_on :macos
 
