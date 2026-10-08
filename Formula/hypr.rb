@@ -1,9 +1,9 @@
 class Hypr < Formula
   desc "Hyperflow developer CLI"
   homepage "https://hyperting.ai"
-  url "https://releases.hyperting.ai/hyperflow/hypr/v0.1.3/aarch64-apple-darwin/hypr-v0.1.3-aarch64-apple-darwin.zip"
-  version "0.1.3"
-  sha256 "ce09032d8bbe7278c45382a3cbd019dab389d50ddc0ba6e35e3c0042a6551e54"
+  url "https://releases.hyperting.ai/hyperflow/hypr/v0.1.4/aarch64-apple-darwin/hypr-v0.1.4-aarch64-apple-darwin.zip"
+  version "0.1.4"
+  sha256 "e2af5422842dd8d66271dbcbc8cb8495ee05dae19407a6014884e12b1d2e4de9"
   license "ISC"
 
   depends_on arch: :arm64
@@ -15,6 +15,6 @@ class Hypr < Formula
   end
 
   test do
-    assert_match "hypr 0.1.3", shell_output("#{bin}/hypr --version")
+    assert_match "hypr 0.1.4", shell_output("#{bin}/hypr --version")
   end
 end
